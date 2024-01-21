@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viatge_turistic>
+  <entrada id="1">
+    <nom>Javier</nom>
+    <llinatge>Espinosa Montoro</llinatge>
+    <data_inici>01-02-2024</data_inici>
+    <data_finalitzacio>13-02-2024</data_finalitzacio>
+    <origen_viatge>París</origen_viatge>
+    <destins>
+      <desti id="1">
+        <nom_ciutat>Marbella</nom_ciutat>
+        <nom_hotel>Amagoty</nom_hotel>
+        <nombre_nits>2</nombre_nits>
+      </desti>
+
+      <desti id="2">
+        <nom_ciutat>Valencia</nom_ciutat>
+        <nom_hotel>Malupo</nom_hotel>
+        <nombre_nits>8</nombre_nits>
+      </desti>
+    </destins>
+    <preu_viatge>700€</preu_viatge>
+  </entrada>
+
+  <entrada id="2">
+    <nom>David</nom>
+    <llinatge>Sites Pintes</llinatge>
+    <data_inici>15-02-2024</data_inici>
+    <data_finalitzacio>24-02-2024</data_finalitzacio>
+    <origen_viatge>Luxemburgo</origen_viatge>
+    <destins>
+      <desti id="1">
+        <nom_ciutat>Madrid</nom_ciutat>
+        <nom_hotel>Madriding</nom_hotel>
+        <nombre_nits>7</nombre_nits>
+      </desti>
+
+      <desti id="2">
+        <nom_ciutat>Maó</nom_ciutat>
+        <nom_hotel>Amagatin</nom_hotel>
+        <nombre_nits>6</nombre_nits>
+      </desti>
+    </destins>
+    <preu_viatge>900€</preu_viatge>
+  </entrada>
+
+  <entrada id="3">
+    <nom>Mónica</nom>
+    <llinatge>Díaz Píaz</llinatge>
+    <data_inici>01-06-2024</data_inici>
+    <data_finalitzacio>12-06-2024</data_finalitzacio>
+    <origen_viatge>Atenas</origen_viatge>
+    <destins>
+      <desti id="1">
+        <nom_ciutat>Palma</nom_ciutat>
+        <nom_hotel>Poriun</nom_hotel>
+        <nombre_nits>10</nombre_nits>
+      </desti>
+
+      <desti id="2">
+        <nom_ciutat>Sevilla</nom_ciutat>
+        <nom_hotel>Exe Sevilla</nom_hotel>
+        <nombre_nits>11</nombre_nits>
+      </desti>
+    </destins>
+    <preu_viatge>800€</preu_viatge>
+  </entrada>
+</viatge_turistic>
