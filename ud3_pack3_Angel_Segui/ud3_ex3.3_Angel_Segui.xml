@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrega SYSTEM "ud3_ex3.3_Angel_Segui.dtd">
+<entrega>
+  <lot n="1">
+    <palet n="1">
+      <nombre_caixes>10</nombre_caixes>
+      <contingut>
+        <component>
+          <nom_component>Processador</nom_component>
+          <procedencia>
+            <pais>Espanya</pais>
+            <pais>Italia</pais>
+          </procedencia>
+          <numero_serie>5463TG</numero_serie>
+          <pes_component>3</pes_component>
+          <unitat_pes>quilos</unitat_pes>
+        </component>
+      </contingut>
+      <pes_palet>15</pes_palet>
+      <forma_manipulacio>Caixa</forma_manipulacio>
+    </palet>
+  </lot>
+</entrega>

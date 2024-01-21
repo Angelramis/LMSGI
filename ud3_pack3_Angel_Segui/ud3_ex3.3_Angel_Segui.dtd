@@ -1,0 +1,16 @@
+<!ELEMENT entrega (lot+)>
+<!ELEMENT lot (palet+)>
+<!ATTLIST lot n CDATA #REQUIRED>
+<!ELEMENT palet (nombre_caixes, contingut, pes_palet, forma_manipulacio)>
+<!ATTLIST palet n CDATA #REQUIRED>
+<!ELEMENT contingut (component+)>
+<!ELEMENT component (nom_component, procedencia?, numero_serie, pes_component, unitat_pes?)>
+<!ELEMENT procedencia (pais+)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT nom_component (#PCDATA)>
+<!ELEMENT numero_serie (#PCDATA)>
+<!ELEMENT pes_component (#PCDATA)>
+<!ELEMENT unitat_pes (#PCDATA)>
+<!ELEMENT nombre_caixes (#PCDATA)>
+<!ELEMENT pes_palet (#PCDATA)>
+<!ELEMENT forma_manipulacio (#PCDATA)>

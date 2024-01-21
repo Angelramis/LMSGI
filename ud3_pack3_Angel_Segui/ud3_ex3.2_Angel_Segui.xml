@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE llista_comandes SYSTEM "ud3_ex3.2_Angel_Segui.dtd">
+
+<llista_comandes>
+  <comanda n="1">
+    <numero_serie>4564RT</numero_serie>
+    <quantitat>2</quantitat>
+    <pes_quilos>34</pes_quilos>
+  </comanda>
+  <comanda n="2">
+    <numero_serie>2464RP</numero_serie>
+    <quantitat>1</quantitat>
+    <pes_quilos>34</pes_quilos>
+  </comanda>
+</llista_comandes>

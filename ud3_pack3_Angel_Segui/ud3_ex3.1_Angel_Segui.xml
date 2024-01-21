@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE llistavendes [
+  <!ELEMENT llistavendes (venda+)>
+  <!ELEMENT venda (import, comprador, vendedor, data?, codi_factura)>
+  <!ATTLIST venda n CDATA #REQUIRED>
+  <!ELEMENT import (#PCDATA)>
+  <!ELEMENT comprador (#PCDATA)>
+  <!ELEMENT vendedor (#PCDATA)>
+  <!ELEMENT data (#PCDATA)>
+  <!ELEMENT codi_factura (#PCDATA)>  
+]>
+
+<llistavendes>
+  <venda n="1">
+    <import>350</import>
+    <comprador>Rupil</comprador>
+    <vendedor>Loris</vendedor>
+    <data>3-5-2024</data>
+    <codi_factura>4564RG</codi_factura>
+  </venda>
+  <venda n="2">
+    <import>75.90</import>
+    <comprador>Albert</comprador>
+    <vendedor>Llobres</vendedor>
+    <data>7-5-2024</data>
+    <codi_factura>7735DG</codi_factura>
+  </venda>
+</llistavendes>
