@@ -1,0 +1,10 @@
+<!ELEMENT arrel (llibres*, cuaderns*, llapisos*)>
+<!ELEMENT llibres (llibre+)>
+<!ELEMENT llibre (#PCDATA)>
+<!ATTLIST llibre titol CDATA #REQUIRED>
+<!ELEMENT cuaderns (cuadern+)>
+<!ATTLIST cuadern num_fulles CDATA #IMPLIED>
+<!ELEMENT cuadern (#PCDATA)>
+<!ELEMENT llapisos (llapis+)>
+<!ATTLIST llapis numero CDATA #REQUIRED>
+<!ELEMENT llapis (#PCDATA)>

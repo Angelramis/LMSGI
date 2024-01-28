@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE arxiu SYSTEM "ud3_ex4.4_Angel_Segui.dtd">
+
+<arxiu>
+  <llistat>
+    <futurs>
+      <futur n="1" preu="100">
+        <procedencia ubicacio="Espanya"></procedencia>
+        <producte>MFJE</producte>
+        <mercat>Espanya</mercat>
+      </futur>
+    </futurs>
+
+    <divises>
+      <divisa n="1" preu="12" estable="Si">Euro
+        <producte_anterior ubicacio="Nova_York"></producte_anterior>
+        <tipus_canvi n="1">Efectiu</tipus_canvi>
+        <tipus_canvi n="2">Crédit</tipus_canvi>
+      </divisa>
+    </divises>
+
+    <bons>
+      <bo n="1" preu="21" estable="No">
+        <producte_anterior ubicacio="Toquio"></producte_anterior>
+        <pais_de_procedencia>Espanya</pais_de_procedencia>
+        <valor_dessitjat>100</valor_dessitjat>
+        <valor_minim>10</valor_minim>
+        <valor_maxim>200</valor_maxim>
+      </bo>
+    </bons>
+
+    <lletres>
+      <lletra n="1" preu="100">
+        <producte_anterior ubicacio="Frankfurt"></producte_anterior>
+        <tipus_interes_pagable>DFSF</tipus_interes_pagable>
+        <pais_emissor>Espanya</pais_emissor>
+      </lletra>
+    </lletres>
+  </llistat>
+</arxiu> 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE llistacursos SYSTEM "ud3_ex4.2_Angel_segui.dtd">
+
+<llistacursos>
+  <curs n="1">
+    <alumne n="1">
+      <dni_alumne>41434553J</dni_alumne>
+      <nom_alumne>Galicio</nom_alumne>
+      <cognom_alumne>Díaz</cognom_alumne>
+      <segon_cognom_alumne>Pérez</segon_cognom_alumne>
+      <assignatures>
+          <assignatura n="1" codi="425F">
+            <nom_assignatura>Valors étics</nom_assignatura>
+            <professor>
+              <nrp_professor>2432532562</nrp_professor>
+              <nom_professor>Juan</nom_professor>
+              <cognom_professor>Pérez</cognom_professor>
+              <segon_cognom_professor>Castillos</segon_cognom_professor>
+            </professor>
+        </assignatura>
+      </assignatures>
+    </alumne>
+  </curs>
+</llistacursos>

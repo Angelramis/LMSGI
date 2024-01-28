@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE arrel SYSTEM "ud3_ex4.3_Angel_Segui.dtd">
+
+<arrel>
+  <llibres>
+    <llibre titol="El camino de la vida"></llibre>
+    <llibre titol="El camino de la vida"></llibre>
+    <llibre titol="El camino del oeste"></llibre>
+    <llibre titol="La vida acústica"></llibre>
+  </llibres>
+  <cuaderns>
+    <cuadern num_fulles="130"></cuadern>
+    <cuadern num_fulles="100"></cuadern>
+  </cuaderns>
+  <llapisos>
+    <llapis numero="24"></llapis>
+    <llapis numero="4"></llapis>
+  </llapisos>
+</arrel>

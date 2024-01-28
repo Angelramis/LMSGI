@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE fitxers SYSTEM "ud3_ex4.1_Angel_Segui.dtd">
+
+<fitxers>
+  <llistafactures>
+    <factura n="1" data="2023-2-09">
+      <emissor cif="B14507616">
+        <nom_emissor>Albert Fabregues</nom_emissor>
+        <volum_vendes>530</volum_vendes>
+      </emissor>
+      <pagador cif="L13207442">
+        <nom_pagador>Joan Felix</nom_pagador>
+        <volum_vendes>230</volum_vendes>
+      </pagador>
+      <import>23000</import>
+    </factura>
+  </llistafactures>
+</fitxers>

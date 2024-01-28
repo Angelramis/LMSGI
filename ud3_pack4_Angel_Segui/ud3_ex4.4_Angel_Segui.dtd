@@ -1,0 +1,29 @@
+<!ELEMENT arxiu (llistat)>
+<!ELEMENT llistat (futurs, divises, bons, lletres)>
+<!ELEMENT futurs (futur+)>
+<!ELEMENT divises (divisa+)>
+<!ELEMENT bons (bo+)>
+<!ELEMENT lletres (lletra+)>
+<!ATTLIST futur n CDATA #REQUIRED preu CDATA #REQUIRED>
+<!ELEMENT futur (procedencia, producte, mercat?)>
+<!ATTLIST procedencia ubicacio CDATA #REQUIRED>
+<!ELEMENT procedencia (#PCDATA)>
+<!ELEMENT producte (#PCDATA)>
+<!ELEMENT mercat (#PCDATA)>
+<!ELEMENT divisa (producte_anterior, tipus_canvi+)>
+<!ATTLIST divisa n CDATA #REQUIRED preu CDATA #REQUIRED estable CDATA #IMPLIED>
+<!ATTLIST producte_anterior procedencia CDATA #REQUIRED>
+<!ELEMENT tipus_canvi (#PCDATA)>
+<!ATTLIST tipus_canvi n CDATA #REQUIRED>
+<!ELEMENT bo (producte_anterior, pais_de_procedencia, valor_dessitjat, valor_minim, valor_maxim)>
+<!ELEMENT pais_de_procedencia (#PCDATA)>
+<!ELEMENT valor_dessitjat (#PCDATA)>
+<!ELEMENT valor_minim (#PCDATA)>
+<!ELEMENT valor_maxim (#PCDATA)>
+<!ATTLIST bo n CDATA #REQUIRED preu CDATA #REQUIRED estable CDATA #IMPLIED>
+<!ELEMENT lletra (producte_anterior, tipus_interes_pagable, pais_emissor)>
+<!ELEMENT producte_anterior EMPTY>
+<!ELEMENT tipus_interes_pagable (#PCDATA)>
+<!ELEMENT pais_emissor (#PCDATA)>
+<!ATTLIST lletra n CDATA #REQUIRED preu CDATA #REQUIRED>
+<!ATTLIST producte_anterior ubicacio (Madrid | Nova_York | Frankfurt | Toquio) CDATA #REQUIRED>
