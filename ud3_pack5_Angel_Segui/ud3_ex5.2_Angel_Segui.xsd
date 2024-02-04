@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="portes" type="portesRoot"/>
+
+<xs:complexType name="portesRoot">
+  <xs:sequence>
+    <xs:element name="portaTancada" type="xs:boolean" default="false"/>
+    <xs:element name="portaOberta" type="xs:boolean" fixed="true"/>
+  </xs:sequence>
+</xs:complexType>
+</xs:schema>
