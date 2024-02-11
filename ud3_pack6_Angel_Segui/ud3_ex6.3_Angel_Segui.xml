@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subhasta xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="subhasta.xsd">
+
+  <objecte>
+    <propietari>Pablo López</propietari>
+    <preu_sortida minim="150.00">40.00</preu_sortida>
+  </objecte>
+
+  <objecte>
+    <propietari>Maria Fernández</propietari>
+    <preu_sortida minim="120.00">70.00</preu_sortida>
+  </objecte>
+
+</subhasta>

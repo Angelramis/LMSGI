@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="empresa.xsd">
+
+  <empleat id="1">
+    <nom_empleat>Enrique Fernández</nom_empleat>
+    <data_inici_contracte>
+      <dia>05</dia>
+      <mes>04</mes>
+      <any>2020</any>
+    </data_inici_contracte>
+    <lloc_actual>Gerent</lloc_actual>
+    <llocs_ocupats>
+      <lloc_ocupat>Venedor telefònic</lloc_ocupat>
+      <lloc_ocupat>Venedor físic</lloc_ocupat>
+    </llocs_ocupats>
+    <cap_directe id="2"/>
+    <salari>40000</salari>
+    <titols_acedemics>
+      <titol_academic>Ingenieria ST</titol_academic>
+      <titol_academic>Direccio Empreses</titol_academic>
+    </titols_acedemics>
+    <seu_treballant>Madrid</seu_treballant>
+    <observacions>
+      <merits>
+        <merit>Paciencia</merit>
+      </merits>
+      <demerits>
+        <demerit>Impulsivitat</demerit>
+        <demerit>Falta de compromís</demerit>
+      </demerits>
+    </observacions>
+  </empleat>
+
+  <empleat id="2">
+    <nom_empleat>Rodrigo Piñata</nom_empleat>
+    <data_inici_contracte>
+      <dia>12</dia>
+      <mes>04</mes>
+      <any>2021</any>
+    </data_inici_contracte>
+    <lloc_actual>Venedor telefònic</lloc_actual>
+    <llocs_ocupats>
+      <lloc_ocupat>Venedor telefònic</lloc_ocupat>
+    </llocs_ocupats>
+    <cap_directe id="3"/>
+    <salari>40000</salari>
+    <titols_acedemics>
+      
+    </titols_acedemics>
+    <seu_treballant>València</seu_treballant>
+  </empleat>
+
+  <empleat id="3">
+    <nom_empleat>Juan Fernández</nom_empleat>
+    <data_inici_contracte>
+      <dia>05</dia>
+      <mes>04</mes>
+      <any>2023</any>
+    </data_inici_contracte>
+    <lloc_actual>Director DF</lloc_actual>
+    <llocs_ocupats>
+      <lloc_ocupat>Director DFJ</lloc_ocupat>
+    </llocs_ocupats>
+    <cap_directe id="4"/>
+    <salari>45000</salari>
+    <titols_acedemics>
+      <titol_academic>Tecnic Informatic</titol_academic>
+    </titols_acedemics>
+    <seu_treballant>Barcelona</seu_treballant>
+    <observacions>
+      <merits>
+        <merit>Feiner</merit>
+      </merits>
+    </observacions>
+  </empleat>
+
+  <empleat id="4">
+    <nom_empleat>Manolo Pinto</nom_empleat>
+    <data_inici_contracte>
+      <dia>02</dia>
+      <mes>02</mes>
+      <any>2020</any>
+    </data_inici_contracte>
+    <lloc_actual>Director Marketing</lloc_actual>
+    <llocs_ocupats>
+      <lloc_ocupat>Director Finanzes</lloc_ocupat>
+      <lloc_ocupat>Cap de LDT</lloc_ocupat>
+    </llocs_ocupats>
+    <cap_directe id="6"/>
+    <salari>50000</salari>
+    <titols_acedemics>
+      <titol_academic>Ingenieria SI</titol_academic>
+      <titol_academic>Direccio Finanza</titol_academic>
+      <titol_academic>Ingenieria PL</titol_academic>
+    </titols_acedemics>
+    <seu_treballant>Madrid</seu_treballant>
+    <observacions>
+      <demerits>
+        <demerit>Ilògic</demerit>
+      </demerits>
+    </observacions>
+  </empleat>
+
+  <empleat id="5">
+    <nom_empleat>Lucia Rodriquez</nom_empleat>
+    <data_inici_contracte>
+      <dia>01</dia>
+      <mes>04</mes>
+      <any>2023</any>
+    </data_inici_contracte>
+    <lloc_actual>Cap de projecte</lloc_actual>
+    <llocs_ocupats>
+      <lloc_ocupat>Cap de projecte</lloc_ocupat>
+    </llocs_ocupats>
+    <cap_directe id="8"/>
+    <salari>10000</salari>
+    <titols_acedemics>
+      <titol_academic>Direccio Empreses</titol_academic>
+    </titols_acedemics>
+    <seu_treballant>València</seu_treballant>
+    <observacions>
+      
+    </observacions>
+  </empleat>
+
+</empresa>

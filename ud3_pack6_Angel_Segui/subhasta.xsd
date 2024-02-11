@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="tipus_preu_minim"> <!--Definir element abans d'emprar-lo-->
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="minim" type="xs:decimal"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:element name="subhasta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="objecte" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="propietari" type="xs:string"/>
+              <xs:element name="preu_sortida" type="tipus_preu_minim"/>
+            </xs:sequence>
+         </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+
+    </xs:complexType>
+
+
+  </xs:element>
+
+
+
+
+</xs:schema>

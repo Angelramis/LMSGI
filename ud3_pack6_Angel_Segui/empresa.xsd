@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="data_inici_contracte">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="salari">
+    <xs:restriction base="xs:decimal"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="seu_treballant">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Madrid"/>
+      <xs:enumeration value="Barcelona"/>
+      <xs:enumeration value="València"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="titol_academic">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="observacions">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="id">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="merit_demerit">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:complexType name="cap_directe">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="id" type="xs:IDREF"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+  <xs:simpleType name="lloc_ocupat">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="dia">
+    <xs:restriction base="xs:integer"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="mes">
+    <xs:restriction base="xs:integer"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="any">
+    <xs:restriction base="xs:integer"/>
+  </xs:simpleType>
+
+  <xs:complexType name="titols_academics">
+    <xs:sequence>
+      <xs:element name="titol_academic" type="titol_academic" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="merits_demerits">
+    <xs:sequence>
+      <xs:element name="merit" type="merit_demerit" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="demerit" type="merit_demerit" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="empleat">
+    <xs:sequence>
+      <xs:element name="nom_empleat" type="xs:string"/>
+      <xs:element name="data_inici_contracte">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="dia" type="dia"/>
+            <xs:element name="mes" type="mes"/>
+            <xs:element name="any" type="any"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="lloc_actual" type="xs:string"/>
+      <xs:element name="llocs_ocupats">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="lloc_ocupat" type="lloc_ocupat" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cap_directe" type="xs:IDREF"/>
+      <xs:element name="salari" type="salari"/>
+      <xs:element name="titols_academics" type="titols_academics" minOccurs="0"/>
+      <xs:element name="seu_treballant" type="seu_treballant"/>
+      <xs:element name="observacions" type="observacions" minOccurs="0"/>
+      <xs:element name="merits_demerits" type="merits_demerits" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="id"/>
+  </xs:complexType>
+
+  <xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="empleat" type="empleat" minOccurs="5" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
