@@ -1,0 +1,66 @@
+/*Paleta de colores
+Principal: (#0496FF)
+Fons: (#F5F5F5)
+text normal: (#222222)
+Subtítols: (#3F3F3F)
+Call to action: (#FEE127)
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', 'Montserrat', 'Open Sans', 'Lato';
+  color: #222222;
+  text-decoration: none;
+  background-color: #F5F5F5;
+}
+
+/*General*/
+body {
+  background-color: #F5F5F5;
+}
+
+
+/*Header*/
+
+header {
+  /*position: fixed;*/
+  width: 100%;
+  /*z-index: 1000;*/
+  outline: 2px solid black;
+  text-align: center;
+}
+
+header nav > div {
+  display: inline-block;
+ }
+
+ header nav {
+  text-align: center;
+  position: relative;
+  padding: 2px;
+ }
+
+.menu {
+  display: none;
+}
+
+.logo img {
+  width: 23%;
+}
+
+.icono_menu img {
+  float: right;
+  width: 19%;
+}
+
+.logo img {
+  float: left;
+}
+
+/*Main*/
+
+main {
+  margin-top: 100px;
+}
+
