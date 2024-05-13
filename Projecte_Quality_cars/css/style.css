@@ -13,54 +13,206 @@ Call to action: (#FEE127)
   color: #222222;
   text-decoration: none;
   background-color: #F5F5F5;
+  list-style-type: none;
 }
 
 /*General*/
-body {
-  background-color: #F5F5F5;
+p {
+  font-size: 18px;
 }
 
 
 /*Header*/
 
 header {
-  /*position: fixed;*/
   width: 100%;
-  /*z-index: 1000;*/
-  outline: 2px solid black;
-  text-align: center;
+  top: 0;
+  position: fixed;
+  border-bottom: 1px solid #222222;
 }
 
-header nav > div {
+.logo img, .icono_menu img{
   display: inline-block;
- }
+}
 
- header nav {
-  text-align: center;
-  position: relative;
-  padding: 2px;
- }
-
-.menu {
+#menu_desplegable_box{
   display: none;
 }
 
+/*Si el checkbox esta checked, mostrar el menu*/
+#menu_desplegable_box:checked ~ .menu{
+  display: inline-block;
+}
+
+/*Caracteristicas del menu desplegable*/
+.menu {
+  display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid #222222;
+    padding: 10px;
+}
+
+.texto_menu > ul > li {
+  padding: 5px 0px 5px 0px;
+}
+
+/*Inputs del menu desplegable*/
+.texto_menu > ul > li:nth-child(1) > a > input[type=button] {
+  background-image: url(../assets/home.png);
+}
+
+.texto_menu > ul > li:nth-child(2) > a > input[type=button] {
+  background-image: url(../assets/coche.png);
+}
+
+.texto_menu > ul > li:nth-child(3) > a > input[type=button] {
+  background-image: url(../assets/carrito_compra.png);
+}
+
+.texto_menu > ul > li > a > input[type=button] {
+  padding: 10px 120px 10px 47px;
+  border: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  height: 45px;
+  box-sizing: border-box;
+  background-position: 5px 10px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.iconos_menu > img {
+  width: 15px;
+}
+
 .logo img {
-  width: 23%;
+  width: 100px;
+  float: left;
 }
 
 .icono_menu img {
   float: right;
-  width: 19%;
-}
-
-.logo img {
-  float: left;
+  width: 75px;
+  padding: 13px 6px 0px 0px;
 }
 
 /*Main*/
 
 main {
-  margin-top: 100px;
+  margin-top: 130px;
+  text-align: center;
+  display: inline-block;
 }
 
+article {
+  display: inline-block;
+  padding: 10px 5px 10px 5px;
+}
+
+
+/*Esto para PC
+article:hover  {
+  border: 1px groove rgb(10, 10, 10);
+  border-radius: 5px;
+}
+*/
+
+.buscador_coches {
+  padding: 30px;
+  display: inline-block;
+}
+
+
+/*Carta producto*/
+.imagen_producto img {
+  width: 370px;
+}
+
+.precio_producto, .nombre_producto {
+  text-align: left;
+}
+
+.precio_producto > h2, .nombre_producto > h2 {
+  padding: 3px;
+}
+
+.precio_producto > h2 {
+  color: #0496FF;
+}
+
+.especificaciones_carta {
+  padding: 10px 0 10px 0;
+}
+
+.km_producto, .ubicacion_producto, .año_producto {
+  font-size: 17px;
+  display: inline;
+  padding: 0% 5% 0% 5%;
+}
+
+.carta_producto {
+  text-align: center;
+}
+
+.boton_detalles_producto {
+  padding: 7px;
+}
+
+/*Otros inputs*/
+
+.buscador_coches input[type=search], .boton_detalles_producto input[type="button"] {
+  font-size: 17px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px #222222;
+}
+
+.boton_detalles_producto input[type="button"] {
+  background-color: #FEE127;
+}
+
+.buscador_coches input[type=search]{ 
+  width: 270px;
+  background-image: url(../assets/lupa.png);
+  padding: 10px 15px 10px 35px;
+  background-position: 5px 10px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+
+.boton_detalles_producto input[type="button"] {
+  width: 200px;
+  font-weight: bold;
+}
+
+/*Tauleta general*/
+@media screen and (min-width: 860px){
+  
+  /*Header*/
+  
+
+}
+
+/*PC general*/
+@media screen and (min-width: 1100px){
+  
+  /*Header*/
+  /*.icono_menu > img {
+    display: none;
+  }*/
+
+  section > .img_1_home > img {
+      width: 700px;
+   }
+  
+   a, .icono_menu, input[type=button], .filtro_icono, select {
+  cursor: pointer;
+  }
+
+}

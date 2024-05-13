@@ -1,0 +1,98 @@
+main > article {
+  padding: 0px 10px 0px 10px;
+}
+
+body > main {
+  display: block;
+} 
+
+.carta_producto > .precio_producto > h2, .carta_producto > .nombre_producto > h2 {
+  padding: 5px 0px 5px 0px;
+}
+
+.imagen_producto > img {
+  width: 400px;
+}
+
+.detalles_producto > div > h3, .detalles_producto > div > h2, .comentarios > h2, .detalles_1 > p{
+  padding: 9px 0px 9px 0px;
+}
+
+.detalles_producto > div {
+  border-top: 2px solid #222222;
+}
+
+.detalles_1, .comentarios {
+  text-align: left;
+}
+
+.detalles_producto > div > div > h3, .detalles_producto > div > div > p {
+  padding: 7px 0px 7px 0px;
+}
+
+.detalles_producto > div > div {
+  display: inline-block;
+  padding: 0% 10% 0% 10%;
+  width: 100px;
+}
+
+
+.comentarios > input[type=text] {
+  width: 100%;
+  height: 200px;
+}
+
+.boton_comprar {
+  padding: 10px;
+}
+
+.boton_comprar > input[type=button] {
+  bottom: 0;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  left: 0;
+  background-color: #FEE127;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-top: 1px solid #222222;
+  box-shadow: 1px 1px 4px #222222;
+}
+
+main {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 860px){
+  
+  article > .imagen_producto > img {
+    width: 750px;
+    margin-top: 20px;
+  }
+
+  .comentarios > input[type=text] {
+    width: 800px;
+ }
+ 
+ .detalles_producto > div {
+  border: none;
+}
+
+  article {
+    border: 1px solid #222222;
+  }
+
+  main {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1100px){ 
+.boton_comprar > input[type=button] {
+  position: relative;
+  border: 1px solid #222222;
+  width: 101%;
+}
+
+}

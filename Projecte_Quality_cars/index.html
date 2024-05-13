@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
 </head>
 
 <body>
@@ -15,20 +17,16 @@
             <a href="./index.html" class="logo">
                 <img src="./assets/QUALITY_CARS_fons_clar_transparent.png" alt="logo">
             </a>
-            <a class="icono_menu">
-                <img src="./assets/menu_desplegable.png" alt="menu_desplegable">
-            </a>
-            <div class="menu">
-                <div class="iconos_menu">
-                    <img src="./assets/home.png" alt="home">
-                    <img src="./assets/carrito_compra.png" alt="carrito_compra">
-                    <img src="./assets/coche.png" alt="coche">
-                </div> 
+            <input type="checkbox" id="menu_desplegable_box">
+            <label for="menu_desplegable_box" class="icono_menu">
+                <img src="./assets/menu_desplegable.png" alt="img_menu">
+            </label>
+            <div class="menu"> 
                 <div class="texto_menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./views/listado_productos.html">Buscar coches</a></li>
-                        <li><a href="./views/carrito.html">Carrito de compra</a></li>
+                        <li><a href="./index.html"><input type="button" value="Home"></a></li>
+                        <li><a href="./views/listado_productos.html"><input type="button" value="Buscar coches"></a></li>
+                        <li><a href="./views/carrito.html"><input type="button" value="Carrito de compra"></a></li>
                     </ul>
                 </div>
             </div>
@@ -37,38 +35,39 @@
     </header>
 
     <main>
-        <div>
             <section>
-                <div>
+                <div class="titulo_home">
                     <h2>¿QUIERES CONDUCIR?</h2>
                 </div>
-                <div>
+                <div class="img_1_home">
                     <img src="./assets/persona_conduciendo.png" alt="persona_conduciendo">
                 </div>
-                <div class="boton_buscar_coche">
-                    <a href="./views/listado_coches" class="buscar_coche"> Buscar coche
-                        <img src="./assets/lupa.png" alt="lupa">
-                    </a>
+                <div class="buscador_coches">
+                    <!--<img src="./assets/lupa.png" alt="lupa">-->
+                    <input type="search" placeholder="Buscar coches...">
                 </div>
             </section>
             <section>
                 <div>
-                    <div>
+                    <div class="texto_introduccion">
                         <h2>Venta de coches de segunda mano y ocasión</h2>
                         <p>Bienvenid@ a QualityCars, una empresa en la que se venden coches de gran calidad y listos para usar.
                             Compra tu siguiente coche y prepárate para disfrutar tu próxima aventura sobre ruedas.
                         </p>
                     </div>
 
-                    <div>
+                    <div class="presentacion_ventajas">
                         <h2>¿Por qué elegir QualityCars?</h2>
-                        <div class="presentacion_ventajas">
+                        <!--Cada carta con div para luego modificar su posicion con media-->
+                        <div class="carta_1">
                             <img src="./assets/verificado.png" alt="verificado">
                             <h3>Coches completamente revisados por expertos</h3>
-
+                        </div>
+                        <div class="carta_2">
                             <img src="./assets/dolar.png" alt="dolar">
                             <h3>Precios competitivos</h3>
-
+                        </div>
+                        <div class="carta_3">
                             <img src="./assets/coche.png" alt="coche">
                             <h3>Gran catálogo de coches</h3>
                         </div>
@@ -77,22 +76,120 @@
             </section>
 
             <section>
-                <article>
-                    <div class="contenedor_imagen">
-                        <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
-                    </div>
-                    <div class="carta_producto">
-                        <span class="precio_producto">10.099€</span>
-                        <span class="nombre_producto">VOLKSWAGEN GOLF 100CV IPR</span>
-                        <span class="km_producto">100.002km</span>
-                        <span class="año_producto">2018</span>
-                        <span class="ubicacion_producto">Ciudadela</span>
-                    </div>
-                    <div class="botón_detalles_producto">
-                        <a href="./views/detalles_producto.html">Detalles</a>
-                    </div>
-                </article>
-
+                <a href="./views/detalles_producto.html">
+                    <article>
+                        <div class="imagen_producto">
+                            <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                        </div>
+                        <div class="carta_producto">
+                            <span class="precio_producto"><h2>10.099€</h2></span>
+                            <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                            <div class="especificaciones_carta">
+                                <span class="km_producto">100.002 km</span>
+                                <span class="año_producto">2018</span>
+                                <span class="ubicacion_producto">Ciudadela</span>
+                            </div>
+                        </div>
+                        <div class="boton_detalles_producto">
+                            <input type="button" value="Detalles">
+                        </div>
+                    </article>
+                </a>
+                <a href="./views/detalles_producto.html">
+                    <article>
+                        <div class="imagen_producto">
+                            <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                        </div>
+                        <div class="carta_producto">
+                            <span class="precio_producto"><h2>10.099€</h2></span>
+                            <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                            <div class="especificaciones_carta">
+                                <span class="km_producto">100.002 km</span>
+                                <span class="año_producto">2018</span>
+                                <span class="ubicacion_producto">Ciudadela</span>
+                            </div>
+                        </div>
+                        <div class="boton_detalles_producto">
+                            <input type="button" value="Detalles">
+                        </div>
+                    </article>
+                </a>
+                <a href="./views/detalles_producto.html">
+                    <article>
+                        <div class="imagen_producto">
+                            <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                        </div>
+                        <div class="carta_producto">
+                            <span class="precio_producto"><h2>10.099€</h2></span>
+                            <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                            <div class="especificaciones_carta">
+                                <span class="km_producto">100.002 km</span>
+                                <span class="año_producto">2018</span>
+                                <span class="ubicacion_producto">Ciudadela</span>
+                            </div>
+                        </div>
+                        <div class="boton_detalles_producto">
+                            <input type="button" value="Detalles">
+                        </div>
+                    </article>
+                </a>
+                <a href="./views/detalles_producto.html">
+                    <article>
+                        <div class="imagen_producto">
+                            <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                        </div>
+                        <div class="carta_producto">
+                            <span class="precio_producto"><h2>10.099€</h2></span>
+                            <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                            <div class="especificaciones_carta">
+                                <span class="km_producto">100.002 km</span>
+                                <span class="año_producto">2018</span>
+                                <span class="ubicacion_producto">Ciudadela</span>
+                            </div>
+                        </div>
+                        <div class="boton_detalles_producto">
+                            <input type="button" value="Detalles">
+                        </div>
+                    </article>
+                </a>
+                <a href="./views/detalles_producto.html">
+                    <article>
+                        <div class="imagen_producto">
+                            <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                        </div>
+                        <div class="carta_producto">
+                            <span class="precio_producto"><h2>10.099€</h2></span>
+                            <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                            <div class="especificaciones_carta">
+                                <span class="km_producto">100.002 km</span>
+                                <span class="año_producto">2018</span>
+                                <span class="ubicacion_producto">Ciudadela</span>
+                            </div>
+                        </div>
+                        <div class="boton_detalles_producto">
+                            <input type="button" value="Detalles">
+                        </div>
+                    </article>
+                </a>
+                <a href="./views/detalles_producto.html">
+                    <article>
+                        <div class="imagen_producto">
+                            <img src="./assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                        </div>
+                        <div class="carta_producto">
+                            <span class="precio_producto"><h2>10.099€</h2></span>
+                            <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                            <div class="especificaciones_carta">
+                                <span class="km_producto">100.002 km</span>
+                                <span class="año_producto">2018</span>
+                                <span class="ubicacion_producto">Ciudadela</span>
+                            </div>
+                        </div>
+                        <div class="boton_detalles_producto">
+                            <input type="button" value="Detalles">
+                        </div>
+                    </article>
+                </a>
             </section>
         </div>
 

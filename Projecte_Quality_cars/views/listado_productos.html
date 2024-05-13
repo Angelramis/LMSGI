@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coches disponibles</title>
+    <title>Listado productos</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/listado_productos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
@@ -12,108 +13,313 @@
 <body>
     <header>
         <nav> 
-            <a href="./index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <img src="../assets/QUALITY_CARS_fons_clar_transparent.png" alt="logo">
             </a>
-            <a class="icono_menu">
-                <img src="../assets/menu_desplegable.png" alt="menu_desplegable">
-            </a>
-            <div class="menu">
-                <div class="iconos_menu">
-                    <img src="../assets/home.png" alt="home">
-                    <img src="../assets/carrito_compra.png" alt="carrito_compra">
-                    <img src="../assets/coche.png" alt="coche">
-                </div> 
+            <input type="checkbox" id="menu_desplegable_box">
+            <label for="menu_desplegable_box" class="icono_menu">
+                <img src="../assets/menu_desplegable.png" alt="img_menu">
+            </label>
+            <div class="menu"> 
                 <div class="texto_menu">
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../views/listado_productos.html">Buscar coches</a></li>
-                        <li><a href="../views/carrito.html">Carrito de compra</a></li>
+                        <li><a href="../index.html"><input type="button" value="Home"></a></li>
+                        <li><a href="../views/listado_productos.html"><input type="button" value="Buscar coches"></a></li>
+                        <li><a href="../views/carrito.html"><input type="button" value="Carrito de compra"></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="filtros">
-                <button>Filtros
-                    <img src="../assets/filtro.png" alt="filtro">
-                </button>
-                <ul class="opciones_filtro">
-                    <a>Eliminar filtros
-                        <img src="../assets/x.png" alt="x">
-                    </a>
+            
+            <input type="checkbox" id="filtro_desplegable_box">
+            <label for="filtro_desplegable_box" class="filtro_icono">
+                <img src="../assets/filtro.png" alt="img_filtro">
+                <p>Filtros</p>
+            </label>  
 
-                    <select name="tipo">
-                        <option value="tipo1">tipo1</option>
-                        <option value="tipo2">tipo2</option>
-                    </select>
-                    <select name="marca">
-                        <option value="marca1">marca1</option>
-                        <option value="marca2">marca2</option>
-                    </select>
-                    <select name="modelo">
-                        <option value="modelo1">modelo1</option>
-                        <option value="modelo2">modelo2</option>
-                    </select>
-                    <select name="ubicacion">
-                        <option value="ubicacion1">ubicacion1</option>
-                        <option value="ubicacion2">ubicacion2</option>
-                    </select>
-                    
-                    <select name="kilometros_desde">
-                        <option value="kilometros_desde1">kilometros1</option>
-                        <option value="kilometros_desde2">kilometros2</option>
-                    </select>
-                    <select name="kilometros_hasta">
-                        <option value="kilometros_hasta1">kilometros1</option>
-                        <option value="kilometros_hasta2">kilometros2</option>
-                    </select>
-                    
-                    <select name="precio_desde">
-                        <option value="precio_desde1">precio1</option>
-                        <option value="precio_desde2">precio2</option>
-                    </select>
-                    <select name="precio_hasta">
-                        <option value="precio_hasta1">precio1</option>
-                        <option value="precio_hasta2">precio2</option>
-                    </select>
+                <div class="menu_filtros">
+                    <div class="filtros_otros">
+                        <input type="button" value="Eliminar filtros">
+                        
+                        <input type="checkbox" id="cerrar_filtros">
+                            <label for="cerrar_filtros" class="cerrar_filtros_icono">
+                            <img src="..//assets/x.png" alt="x">
+                        </label>
 
-                    <select name="año_desde">
-                        <option value="año_desde1">año1</option>
-                        <option value="año_desde2">año2</option>
-                    </select>
-                    <select name="año_hasta">
-                        <option value="año_hasta1">año1</option>
-                        <option value="año_hasta2">año2</option>
-                    </select>
-
-                    <button>Buscar</button>
-
-                </ul>
-            </div>
+                    </div>
+                    <ul>
+                        <div class="div_tipo">
+                            <h3>Tipo</h3>
+                            <select name="tipo">
+                                <option value="tipo" selected>Todos</option>
+                                <option value="berlina">Berlina</option>
+                                <option value="cupe">Cupé</option>
+                                <option value="familiar">Familiar</option>
+                                <option value="cabrio">Cabrio</option>
+                            </select>
+                        </div>
+                        <div class="div_marca">
+                            <h3>Marca</h3>
+                            <select name="marca">
+                                <option value="marca" selected>Todas</option>
+                                <option value="ford">Ford</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="volkswagen">Volkswagen</option>
+                                <option value="seat">Seat</option>
+                            </select>
+                        </div>
+                        <div class="div_modelo">
+                            <h3>Modelo</h3>
+                            <select name="modelo">
+                                <option value="modelo" selected>Todos</option>
+                                <option value="auris">Auris</option>
+                                <option value="golf">Golf</option>
+                                <option value="fiesta">Fiesta</option>
+                            </select>
+                        </div>
+                        <div class="div_ubicacion">
+                            <h3>Ubicación</h3>
+                            <select name="ubicacion">
+                                <option value="ubicacion" selected>Todas</option>
+                                <option value="ubicacion1">Mahón</option>
+                                <option value="ubicacion2">Alayor</option>
+                                <option value="ubicacion2">Ciudadela</option>
+                                <option value="ubicacion2">Ferrerías</option>
+                            </select>
+                        </div>
+                        <div class="div_kilometros">
+                            <h3>Kilómetros</h3>
+                            <select name="kilometros_desde">
+                                <option value="km_desde" selected>Cualquiera</option>
+                                <option value="desde_1.000">1.000</option>
+                                <option value="desde_5.000">5.000</option>
+                                <option value="desde_10.000">10.000</option>
+                                <option value="desde_25.000">25.000</option>
+                                <option value="desde_50.000">50.000</option>
+                                <option value="desde_75.000">75.000</option>
+                                <option value="desde_100.000">100.000</option>
+                            </select>
+                            <select name="kilometros_hasta">
+                                <option value="km_hasta" selected>Cualquiera</option>
+                                <option value="hasta_1.000">1.000</option>
+                                <option value="hasta_5.000">5.000</option>
+                                <option value="hasta_10.000">10.000</option>
+                                <option value="hasta_25.000">25.000</option>
+                                <option value="hasta_50.000">50.000</option>
+                                <option value="hasta_75.000">75.000</option>
+                                <option value="hasta_100.000">100.000</option>
+                                <option value="hasta_150.000">150.000</option>
+                            </select>
+                        </div>
+                        <div class="div_precio">
+                            <h3>Precio</h3>
+                            <select name="precio_desde">
+                                <option value="precio_desde" selected>Cualquiera</option>
+                                <option value="hasta_1.000">1.000</option>
+                                <option value="hasta_5.000">5.000</option>
+                                <option value="hasta_10.000">10.000</option>
+                                <option value="hasta_25.000">25.000</option>
+                                <option value="hasta_50.000">50.000</option>
+                                <option value="hasta_75.000">75.000</option>
+                                <option value="hasta_100.000">100.000</option>
+                                <option value="hasta_150.000">150.000</option>
+                            </select>
+                            <select name="precio_hasta">
+                                <option value="precio_hasta" selected>Cualquiera</option>
+                                <option value="hasta_1.000">1.000</option>
+                                <option value="hasta_5.000">5.000</option>
+                                <option value="hasta_10.000">10.000</option>
+                                <option value="hasta_25.000">25.000</option>
+                                <option value="hasta_50.000">50.000</option>
+                                <option value="hasta_75.000">75.000</option>
+                                <option value="hasta_100.000">100.000</option>
+                                <option value="hasta_150.000">150.000</option>
+                            </select>
+                        </div>
+                        <div class="div_año">
+                            <h3>Año</h3>
+                            <select name="año_desde">
+                                <option value="año_desde" selected>Cualquiera</option>
+                                <option value="año_desde1">2000</option>
+                                <option value="año_desde2">2005</option>
+                                <option value="año_desde3">2010</option>
+                                <option value="año_desde4">2015</option>
+                                <option value="año_desde5">2020</option>
+                                <option value="año_desde6">2022</option>
+                            </select>
+                            <select name="año_hasta">
+                                <option value="año_hasta" selected>Cualquiera</option>
+                                <option value="año_hasta1">2000</option>
+                                <option value="año_hasta2">2005</option>
+                                <option value="año_hasta3">2010</option>
+                                <option value="año_hasta4">2015</option>
+                                <option value="año_hasta5">2020</option>
+                                <option value="año_hasta6">2024</option>
+                            </select>
+                        </div>
+                        <div class="buscar_filtros">
+                            <input type="button" value="Buscar">
+                        </div>
+                    </ul>
+                </div>
         </nav>
     </header>
 
     <main>
         <section>
-            <article>
-                <div class="contenedor_imagen">
-                    <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
-                </div>
-                <div class="carta_producto">
-                    <span class="precio_producto">10.099€</span>
-                    <span class="nombre_producto">VOLKSWAGEN GOLF 100CV IPR</span>
-                    <span class="km_producto">100.002km</span>
-                    <span class="año_producto">2018</span>
-                    <span class="ubicacion_producto">Ciudadela</span>
-                </div>
-                <div class="botón_detalles_producto">
-                    <a href="../views/detalles_producto.html">Detalles</a>
-                </div>
-            </article>
-
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
+            <a href="../views/detalles_producto.html">
+                <article>
+                    <div class="imagen_producto">
+                        <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+                    </div>
+                    <div class="carta_producto">
+                        <span class="precio_producto"><h2>10.099€</h2></span>
+                        <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                        <div class="especificaciones_carta">
+                            <span class="km_producto">100.002 km</span>
+                            <span class="año_producto">2018</span>
+                            <span class="ubicacion_producto">Ciudadela</span>
+                        </div>
+                    </div>
+                    <div class="boton_detalles_producto">
+                        <input type="button" value="Detalles">
+                    </div>
+                </article>
+            </a>
         </section>
-
     </main>
-
 
 </body>
 </html>
