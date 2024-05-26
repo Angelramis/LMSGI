@@ -113,6 +113,19 @@ article {
   padding: 10px 5px 10px 5px;
 }
 
+.boton_comprar > a > input[type=button], .boton_finalizar a > input[type="button"], .boton_pagar a > input[type="button"] {
+  bottom: 0;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  left: 0;
+  background-color: #FEE127;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-top: 1px solid #222222;
+  box-shadow: 1px 1px 4px #222222;
+}
 
 /*Esto para PC
 article:hover  {
@@ -164,7 +177,7 @@ article:hover  {
 
 /*Otros inputs*/
 
-.buscador_coches input[type=search], .boton_detalles_producto input[type="button"] {
+.buscador_coches input[type=search], .boton_detalles_producto input[type="button"], .boton_eliminar_producto input[type="button"]{
   font-size: 17px;
   height: 45px;
   box-sizing: border-box;
@@ -173,7 +186,7 @@ article:hover  {
   box-shadow: 1px 1px 4px #222222;
 }
 
-.boton_detalles_producto input[type="button"] {
+.boton_detalles_producto input[type="button"], .boton_eliminar_producto input[type="button"] {
   background-color: #FEE127;
 }
 
@@ -186,7 +199,7 @@ article:hover  {
   background-repeat: no-repeat;
 }
 
-.boton_detalles_producto input[type="button"] {
+.boton_detalles_producto input[type="button"], .boton_eliminar_producto input[type="button"] {
   width: 200px;
   font-weight: bold;
 }

@@ -1,0 +1,90 @@
+body > main {
+  padding: 0px 15px 0px 15px;
+}
+
+.titulo_confirmacion_compra {
+  padding-bottom: 10px;
+}
+
+.titulo_confirmacion_compra h2 {
+  font-size: 27px;
+}
+
+body > main {
+  display: block;
+  text-align: left;
+  min-width: 330px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+
+h4, p {
+  font-size: 20px;
+}
+
+.info div:first-child h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.contenido_pedido > div, 
+.contenido_usuario > div {
+  padding: 7px 7px 7px 7px;
+}
+
+.contenido_pedido > div > h4, .contenido_pedido > div > p, 
+.contenido_usuario > div > h4, .contenido_usuario > div > p {
+  display: inline-block;
+}
+
+.info > div {
+  padding: 15px 0px 15px 0px;
+  border-top: 1px solid #222222;
+  flex-grow: 1; /*Hacer que crezcan lo ancho de la pantalla*/
+}
+
+.contenido_comentarios > input[type=text] {
+    font-size: 17px;
+    box-sizing: border-box;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+/*Tauleta*/
+@media screen and (min-width: 860px){
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info > div {
+    border: 1px solid #222222;
+    margin: 10px;
+    padding: 10px 30px 30px 30px;
+    text-align: center;
+  }
+
+  .info > div > div:first-child { 
+    padding-bottom: 10px;
+  }
+
+  .info > .info_comentarios {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/*PC*/
+@media screen and (min-width: 1100px){
+.contenido_comentarios > input[type=text] {
+  padding-bottom: 250px;
+}
+
+}

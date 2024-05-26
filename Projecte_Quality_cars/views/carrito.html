@@ -1,0 +1,80 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compra</title>
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+<header>
+  <nav> 
+      <a href="../index.html" class="logo">
+          <img src="../assets/QUALITY_CARS_fons_clar_transparent.png" alt="logo">
+      </a>
+      <input type="checkbox" id="menu_desplegable_box">
+      <label for="menu_desplegable_box" class="icono_menu">
+          <img src="../assets/menu_desplegable.png" alt="img_menu">
+      </label>
+      <div class="menu"> 
+          <div class="texto_menu">
+              <ul>
+                  <li><a href="../index.html"><input type="button" value="Home"></a></li>
+                  <li><a href="../views/listado_productos.html"><input type="button" value="Buscar coches"></a></li>
+                  <li><a href="../views/carrito.html"><input type="button" value="Carrito de compra"></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+    <main>
+        <div class="titulo_carrito">
+            <h2>Carrito de compra</h2>
+        </div>
+        <article>
+            <div class="imagen_producto">
+                <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+            </div>
+            <div class="carta_producto">
+                <span class="precio_producto"><h2>10.099€</h2></span>
+                <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                <div class="especificaciones_carta">
+                    <span class="km_producto">100.002 km</span>
+                    <span class="año_producto">2018</span>
+                    <span class="ubicacion_producto">Ciudadela</span>
+                </div>
+            </div>
+            <div class="boton_eliminar_producto">
+                <input type="button" value="Eliminar">
+            </div>
+        </article>
+        <article>
+            <div class="imagen_producto">
+                <img src="../assets/vw_golf_2018.jpg" alt="vs_golf_2018">
+            </div>
+            <div class="carta_producto">
+                <span class="precio_producto"><h2>10.099€</h2></span>
+                <span class="nombre_producto"><h2>VOLKSWAGEN GOLF 100CV IPR</h2></span>
+                <div class="especificaciones_carta">
+                    <span class="km_producto">100.002 km</span>
+                    <span class="año_producto">2018</span>
+                    <span class="ubicacion_producto">Ciudadela</span>
+                </div>
+            </div>
+            <div class="boton_eliminar_producto">
+                <input type="button" value="Eliminar">
+            </div>
+        </article>
+        <div class="detalles_carrito">
+            <p>Coste de envío y gestión: 0€</p>
+            <h2>Total: 10.099€</h2>
+        </div>
+        <div class="boton_finalizar">
+            <a href="../views/checkout.html">
+                <input type="button" value="Finalizar compra">
+            </a>
+          </div>
+    </main>
+
+</body>

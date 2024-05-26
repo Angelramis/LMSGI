@@ -1,0 +1,68 @@
+.titulo_checkout h2{
+  font-size: 27px;
+ }
+
+body > main {
+  display: block;
+  margin-bottom: 100px;
+  min-width: 360px; /*Hacer que la pantalla no se coma el contenido al hacerse pequeña*/
+}
+
+.formulario_checkout > div > div {
+  padding: 10px 0px 10px 0px;
+}
+
+.formulario_checkout > div > div > input[type="text"] {
+  font-size: 17px;
+  box-sizing: border-box;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  width: 250px;
+  height: 40px;
+}
+
+.formulario_checkout > div > div > h2 {
+  padding: 8px 0px 8px 0px;
+}
+
+/*Tablet*/
+@media screen and (min-width: 860px){
+
+  .formulario_checkout > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .formulario_checkout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    border: 1px solid #222222;
+  }
+
+  input[type="text"] {
+    margin: 10px;
+  }
+}
+
+/*PC*/
+@media screen and (min-width: 1100px){
+
+  .formulario_checkout {
+    max-width: 1000px;
+    margin-left: 80px;
+  }
+
+  .boton_pagar {
+    margin-top: 40px;
+  }
+
+  main > .boton_pagar a > input[type="button"] {
+    position: static;
+    width: 250px;
+    border: 1px solid #222222;
+  }
+
+}

@@ -1,0 +1,88 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+<header>
+  <nav> 
+      <a href="../index.html" class="logo">
+          <img src="../assets/QUALITY_CARS_fons_clar_transparent.png" alt="logo">
+      </a>
+      <input type="checkbox" id="menu_desplegable_box">
+      <label for="menu_desplegable_box" class="icono_menu">
+          <img src="../assets/menu_desplegable.png" alt="img_menu">
+      </label>
+      <div class="menu"> 
+          <div class="texto_menu">
+              <ul>
+                  <li><a href="../index.html"><input type="button" value="Home"></a></li>
+                  <li><a href="../views/listado_productos.html"><input type="button" value="Buscar coches"></a></li>
+                  <li><a href="../views/carrito.html"><input type="button" value="Carrito de compra"></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+  <main>
+    <div class="titulo_checkout">
+      <h2>Finalizar compra</h2>
+    </div>
+    <div class="formulario_checkout">
+      <div class="datos_personales">
+        <div class="nombre">
+          <h2>Nombre:</h2>
+          <input type="text">
+        </div>
+        <div class="apellidos">
+          <h2>Apellidos:</h2>
+          <input type="text">
+        </div>
+        <div class="direccion">
+          <h2>Dirección:</h2>
+          <input type="text">
+        </div>
+        <div class="ciudad">
+          <h2>Ciudad:</h2>
+          <input type="text">
+        </div>
+        <div class="correo">
+          <h2>Correo:</h2>
+          <input type="text">
+        </div>
+        <div class="telefono">
+          <h2>Teléfono:</h2>
+          <input type="text">
+        </div>
+      </div>
+
+      <div class="datos_bancarios">
+        <div class="numero_tarjeta">
+          <h2>Número de tarjeta:</h2>
+          <input type="text">
+        </div>
+        <div class="numero_tarjeta">
+          <h2>MM/YY:</h2>
+          <input type="text">
+        </div>
+        <div class="cvv">
+          <h2>CVV:</h2>
+          <input type="text">
+        </div>
+      </div>
+    </div>
+    
+    <div class="boton_pagar">
+      <a href="../views/confirmacion_compra.html">
+        <input type="button" value="Pagar">
+      </a>
+    </div>
+
+  </main>
+
+
+</body>
